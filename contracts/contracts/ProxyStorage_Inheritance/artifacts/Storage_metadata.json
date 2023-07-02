@@ -1,0 +1,133 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "numberOld",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "numberNew",
+						"type": "uint256"
+					}
+				],
+				"name": "numberUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {
+				"retrieve()": {
+					"details": "Return value ",
+					"returns": {
+						"_0": "value of 'number'"
+					}
+				},
+				"store(uint256)": {
+					"details": "Store value in variable",
+					"params": {
+						"num": "value to store"
+					}
+				}
+			},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/contracts/ProxyStorage_Inheritance/1_Storage.sol": "Storage"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/contracts/ProxyStorage_Inheritance/1_Storage.sol": {
+			"keccak256": "0x97fcff9682216ef3cf2b07ca914673cfc4521c6168b80637ccfc57ea374bd57e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://791ff0c26d935062b5f9de9d38269c613631232a1100659101fa0f04382fd3ee",
+				"dweb:/ipfs/QmQtTAzV6uLE2she7xTZXr4TFTuF3QpZMnB3fAyo7Ceg63"
+			]
+		},
+		"contracts/contracts/ProxyStorage_Inheritance/PseudoParent.sol": {
+			"keccak256": "0xb6a2278dc422903c3e1c23407fd0be27099415e93a2208c74f3503c48b448955",
+			"urls": [
+				"bzz-raw://3c1dd0755657f930c75ec226298915a5aa3b7440539ccb7f84c494e9ec937ea7",
+				"dweb:/ipfs/QmS2j9MpEzodBjhksr9xh6Vu7jodUJgthhzGCChnCECa2u"
+			]
+		}
+	},
+	"version": 1
+}

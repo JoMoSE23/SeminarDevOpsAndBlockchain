@@ -1,0 +1,86 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_delegate",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "getDelegate",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "delegate",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/contracts/ProxyStorage/ProxyPattern.sol": "ProxyPattern"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/contracts/ProxyStorage/ProxyPattern.sol": {
+			"keccak256": "0x2efd9f46b00e1188fbabbd2d8d74e4b2e21e46da101968af42a4131abf9bbf99",
+			"urls": [
+				"bzz-raw://b4718a4e391dfcdc78bc3c6b30eba2471129d73b4b82cb1f69adf5b2af242348",
+				"dweb:/ipfs/QmTHg8zcrHN7ypuU3GWG4N4fdzowhySRix1FUXVX1xG6EN"
+			]
+		}
+	},
+	"version": 1
+}
